@@ -1,0 +1,219 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#main-container {
+  display: flex;
+  width: 100%;
+}
+/* brand name */
+.logo {
+  background-color: rgb(21, 114, 232);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  min-height: 6rem;
+  > p {
+    color: white;
+    font-size: 1.8rem;
+    margin: 2px;
+    padding: 2px;
+  }
+}
+#side-navBar {
+  /* display: none; */
+  height: 100%;
+  width: 250px;
+  position: relative;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: white;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+/* icons of nav menu */
+i {
+  margin-right: 5px;
+  font-size: 15px;
+}
+/* Menu properties */
+.item-menu li {
+  list-style: none;
+  margin: 5px, 0px, 5px, 0px;
+  padding: 5px;
+}
+/* links color */
+.item-menu a {
+  padding: 8px 8px 8px 30px;
+  text-decoration: none;
+  display: block;
+  transition: 0.3s;
+  color: black;
+}
+/* on hover for links */
+.item-menu a:hover {
+  text-decoration: none;
+  color: black;
+}
+/* on hover to chng bckclr  */
+.item-menu li:hover {
+  background-color: #ddd;
+}
+/* drop down menu */
+.sub-menu {
+  display: none;
+  align-items: center;
+  margin: 3px;
+  text-decoration: none;
+  padding-left: 5px;
+}
+/* on hover drop down appears */
+.dropdown:hover .sub-menu {
+  display: block;
+}
+/* Dash-Board */
+#sub-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  background-color: rgb(249, 245, 245);
+  /* background-color: rgb(43, 128, 236); */
+}
+#dash-Board {
+  width: 100%;
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  min-height: 6rem;
+  justify-content: flex-end;
+  background-color: rgb(43, 128, 236);
+}
+.my-dash {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+}
+/* navbar toggler to left */
+#navBar-Toggle {
+  margin-right: auto;
+}
+/* to set font weight and margin of icons */
+#dash-Board i {
+  font-size: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/* for icons that are required with green bckclr */
+.white-icon {
+  color: white;
+  background-color: rgb(40, 185, 123);
+  padding: 5px;
+  margin: 5px;
+  border: none;
+}
+/* for icons on white */
+.white {
+  color: white;
+  padding: 5px;
+  margin: 5px;
+  background-color: rgb(43, 128, 236);
+  border: none;
+}
+.white-txt {
+  color: white;
+  margin: 5px;
+  padding: 5px;
+}
+/* Hero section */
+#demo-txt {
+  margin: 20px;
+  padding: 5px;
+}
+.fields-container {
+  display: flex;
+  justify-content: space-between;
+  > select {
+    /* CSS properties for styling the select element */
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    color: black;
+    margin: 20px;
+  }
+}
+.field-1 {
+  width: 300px;
+}
+.cards-container-row {
+  display: flex;
+  width: auto;
+  justify-content: space-between;
+}
+
+.card {
+  display: flex;
+  background-color: white;
+  cursor: pointer;
+  width: 20%;
+  height: 9rem;
+  border-radius: 15px;
+  box-shadow: 2px 2px 4px rgb(221, 221, 221);
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 20px;
+}
+.card i {
+  font-size: xx-large;
+  padding: 10px;
+  margin: 2px;
+  border-radius: 22px;
+}
+.card p {
+  margin: 5px;
+  font-size: 1.5rem;
+}
+.card b {
+  margin: 5px;
+  font-size: 1.6rem;
+}
+.col {
+  display: flex;
+  flex-direction: column;
+  margin: 4px;
+}
+/* for blue icons */
+.blue {
+  background-color: rgb(17, 205, 239);
+  color: white;
+}
+.yellow {
+  background-color: rgb(255, 173, 70);
+  color: white;
+}
+.red {
+  background-color: rgb(245, 54, 92);
+  color: white;
+}
+@media screen and (max-width: 786px) {
+  .logo {
+    background-color: rgb(21, 114, 232);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    min-height: 3rem;
+    > p {
+      color: white;
+      font-size: 1rem;
+      margin: 2px;
+      padding: 2px;
+    }
+  }
+}
