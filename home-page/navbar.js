@@ -2,10 +2,10 @@
 function toggleNav() {
   if (document.getElementById("side-navBar").style.width === "250px") {
     document.getElementById("side-navBar").style.width = "0";
-    // document.getElementById("sub-container").style.width = "100%";
+    document.getElementById("main-container").style.marginLeft = "0px";
   } else {
     document.getElementById("side-navBar").style.width = "250px";
-    // document.getElementById("sub-container").style.width = "75%";
+    document.getElementById("main-container").style.marginLeft = "250px";
   }
 }
 

@@ -3,13 +3,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-#main-container {
-  display: flex;
-  width: 100%;
-  height: auto;
-  background-color: rgb(249, 245, 245);
-}
-/* brand name */
 .logo {
   background-color: rgb(21, 114, 232);
   justify-content: center;
@@ -24,10 +17,9 @@
   }
 }
 #side-navBar {
-  /* display: none; */
   height: 100%;
-  width: 250px;
-  position: relative;
+  width: 0%;
+  position: fixed;
   z-index: 1;
   top: 0;
   left: 0;
@@ -35,7 +27,6 @@
   overflow-x: hidden;
   transition: 0.5s;
 }
-
 /* icons of nav menu */
 i {
   margin-right: 5px;
@@ -76,20 +67,19 @@ i {
 .dropdown:hover .sub-menu {
   display: block;
 }
-/* Dash-Board */
-#sub-container {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: auto;
+
+/* Main section */
+#main-container {
+  transition: margin-left 0.5s;
+  background-color: rgb(249, 245, 245);
 }
+/* Dash board */
 #dash-Board {
   width: 100%;
   display: flex;
   cursor: pointer;
   align-items: center;
   min-height: 6rem;
-  justify-content: flex-end;
   background-color: rgb(43, 128, 236);
 }
 .my-dash {
@@ -98,7 +88,7 @@ i {
   flex-direction: row;
   list-style: none;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
 }
 /* navbar toggler to left */
 #navBar-Toggle {
@@ -132,7 +122,10 @@ i {
   margin: 5px;
   padding: 5px;
 }
-/* Hero section */
+/* Hero Section */
+#hero {
+  display: flex;
+}
 #demo-txt {
   margin: 20px;
   padding: 5px;
@@ -156,7 +149,6 @@ i {
   display: flex;
   justify-content: space-between;
 }
-
 .Card {
   display: flex;
   background-color: white;
@@ -183,6 +175,7 @@ i {
   margin: 5px;
   font-size: 1.6rem;
 }
+
 .col {
   display: flex;
   flex-direction: column;
@@ -193,11 +186,108 @@ i {
   background-color: rgb(17, 205, 239);
   color: white;
 }
+/* for yellow */
 .yellow {
   background-color: rgb(255, 173, 70);
   color: white;
 }
+/* for red */
 .red {
   background-color: rgb(245, 54, 92);
   color: white;
+}
+
+/* Media queries */
+@media only screen and (min-width: 250px) and (max-width: 576px) {
+  #side-navBar {
+    width: 50%;
+  }
+  #dash-Board i {
+    display: flex;
+    flex-direction: row;
+    font-size: 1rem;
+    margin-left: 0.6rem;
+    margin-right: 0.6rem;
+  }
+  .fields-container {
+    flex-direction: column;
+  }
+  .field-1 {
+    width: 90%;
+  }
+  .field-2 {
+    width: 25%;
+  }
+  .cards-container-row {
+    flex-direction: column;
+  }
+  .Card {
+    width: 90%;
+    padding: 6rem;
+  }
+  .Card i {
+    font-size: 3rem;
+  }
+  .Card p {
+    font-size: 2rem;
+  }
+  .Card b {
+    font-size: 2rem;
+  }
+}
+
+/* Small devices (tablets) */
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  #side-navBar {
+    width: 50%;
+  }
+
+  #dash-Board i {
+    display: flex;
+    flex-direction: row;
+    font-size: 1rem;
+    margin-left: 0.6rem;
+    margin-right: 0.6rem;
+  }
+  .fields-container {
+    flex-direction: column;
+  }
+  .field-1 {
+    width: 90%;
+  }
+  .field-2 {
+    width: 25%;
+  }
+  .cards-container-row {
+    flex-direction: column;
+  }
+  .Card {
+    width: 90%;
+    padding: 6rem;
+  }
+  .Card i {
+    font-size: 3rem;
+    padding: 12px;
+  }
+
+  .Card p {
+    font-size: 2rem;
+  }
+  .Card b {
+    font-size: 2rem;
+  }
+}
+
+/* Medium devices (laptops, small desktops) */
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  #side-navBar {
+    width: 30%;
+  }
+  .Card i {
+    font-size: 2.5rem;
+  }
+
+  .Card p {
+    font-size: 1.6rem;
+  }
 }
