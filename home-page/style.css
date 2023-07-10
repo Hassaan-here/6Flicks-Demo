@@ -71,9 +71,9 @@ i {
 
 /* Main section */
 #main-container {
-  width: 100%;
+  /* width: 100%;
   max-width: 100%;
-  height: 100vh;
+  height: 100vh; */
   background-color: rgb(249, 245, 245);
 }
 /* Dash board */
@@ -242,7 +242,7 @@ i {
 /* Small devices (tablets) */
 @media only screen and (min-width: 577px) and (max-width: 768px) {
   #side-navBar {
-    width: 50%;
+    width: 40%;
   }
 
   #dash-Board i {
