@@ -71,25 +71,22 @@ i {
 
 /* Main section */
 #main-container {
-  /* width: 100%;
+  width: 100%;
   max-width: 100%;
-  height: 100vh; */
   background-color: rgb(249, 245, 245);
 }
 /* Dash board */
 #dash-Board {
-  width: 100%;
   display: flex;
+  flex-direction: row;
   cursor: pointer;
   align-items: center;
   min-height: 6rem;
   background-color: rgb(43, 128, 236);
 }
 .my-dash {
-  width: 100%;
   display: flex;
   flex-direction: row;
-  list-style: none;
   align-items: center;
   justify-content: flex-end;
 }
@@ -102,11 +99,16 @@ i {
   font-size: 15px;
   margin-left: 10px;
   margin-right: 10px;
+  color: white;
+}
+#dash-txt {
+  margin: 5px;
+  color: white;
+  font-size: 15px;
 }
 
 /* for icons that are required with green bckclr */
 .white-icon {
-  color: white;
   background-color: rgb(40, 185, 123);
   padding: 5px;
   margin: 5px;
@@ -114,7 +116,6 @@ i {
 }
 /* for icons on white */
 .white {
-  color: white;
   padding: 5px;
   margin: 5px;
   background-color: rgb(43, 128, 236);
@@ -208,9 +209,12 @@ i {
   #dash-Board i {
     display: flex;
     flex-direction: row;
-    font-size: 1rem;
+    font-size: 0.9rem;
     margin-left: 0.6rem;
     margin-right: 0.6rem;
+  }
+  #dash-txt {
+    display: none;
   }
   .fields-container {
     flex-direction: column;
