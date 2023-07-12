@@ -6,7 +6,6 @@ function toggleNav() {
     document.body.clientWidth;
 
   if (screenWidth < 767) {
-    console.log("what the fuck");
     if (document.getElementById("side-navBar").style.width === "250px") {
       document.getElementById("side-navBar").style.width = "0";
       document.getElementById("main-container").style.transform =

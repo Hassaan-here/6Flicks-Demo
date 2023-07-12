@@ -5,15 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home-6Flicks Technologies</title>
-    <link rel="stylesheet" href="style.css">
+
+    <!-- CDN links for icons -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         integrity="sha512-..." crossorigin="anonymous" />
-    <script src="Navbar.js" defer></script>
+    <!-- Styles sheet -->
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="customerstyle.css">
-    <script src="navbar.js"></script>
+    <!-- Additional Javascript -->
+    <script src="Navbar.js" defer></script>
+    <!-- CDN links for Data-table -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.1/js/jquery.dataTables.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.1/css/jquery.dataTables.min.css">
+
 </head>
 
 
@@ -208,34 +216,8 @@
                     <h2>All your Customers</h2>
                     <button class="blue-btn"><i class="fas fa-plus"> Add</i></button>
                 </div>
-                <div class="row-2">
-                    <div id="Entries">
-                        <p>Show</p>
-                        <select name="entries" id="entries">
-                            <option value="" disabled selected>Select</option>
-                            <option value="">25</option>
-                            <option value="">50</option>
-                            <option value="">100</option>
-                            <option value="">500</option>
-                            <option value="">1000</option>
-                            <option value="">ALL</option>
-                        </select>
-                        <p>entries</p>
-                    </div>
-                    <div id="export-btns">
-                        <button>Export to CSV</button>
-                        <button>Export to Excel</button>
-                        <button>Print</button>
-                        <button>Column Visibility</button>
-                        <button>Export to</button>
-                    </div>
-
-                    <input type="text" id="search" placeholder="search">
-
-                </div>
-
                 <div id="table-sub-container">
-                    <table class="table table-striped table-bordered">
+                    <table class="table table-striped table-bordered" id="mytable">
                         <thead>
                             <tr>
                                 <th>Actions</th>
@@ -259,6 +241,122 @@
                             </tr>
                         </thead>
                         <tbody>
+                            <tr>
+                                <td>
+                                    <button class="dropdown action-btn">Actions <i
+                                            class="fa fa-caret-down"></i></button>
+                                    <ul class="actions-menu">
+                                        <li><i class="fas fa-money-bill"></i>Pay</li>
+                                        <li><i class="fas fa-eye"></i>View</li>
+                                        <li><i class="fas fa-edit"></i>Edit</li>
+                                        <li><i class="fas fa-power-off"></i>Deactivate</li>
+                                    </ul>
+                                </td>
+                                <td>CO0001</td>
+                                <td> Demo</td>
+                                <td>Walk-In Customer</td>
+                                <td>example@.com</td>
+                                <td>Demo</td>
+                                <td>No limit</td>
+                                <td>Rs.00</td>
+                                <td>Rs.00</td>
+                                <td>10/26/2020</td>
+                                <td>Demo</td>
+                                <td>Demo</td>
+                                <td>Demo</td>
+                                <td>Rs 17,692.20</td>
+                                <td>₨ 0.00</td>
+                                <td>Demo</td>
+                                <td>Demo</td>
+                                <td>DEmo</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <button class="dropdown action-btn">Actions <i
+                                            class="fa fa-caret-down"></i></button>
+                                    <ul class="actions-menu">
+                                        <li><i class="fas fa-money-bill"></i>Pay</li>
+                                        <li><i class="fas fa-eye"></i>View</li>
+                                        <li><i class="fas fa-edit"></i>Edit</li>
+                                        <li><i class="fas fa-power-off"></i>Deactivate</li>
+                                    </ul>
+                                </td>
+                                <td>CO0002</td>
+                                <td> Demo</td>
+                                <td>Walk-In Customer</td>
+                                <td>example@.com</td>
+                                <td>Demo</td>
+                                <td>No limit</td>
+                                <td>Rs.00</td>
+                                <td>Rs.00</td>
+                                <td>10/26/2020</td>
+                                <td>Demo</td>
+                                <td>Demo</td>
+                                <td>Demo</td>
+                                <td>Rs 17,692.20</td>
+                                <td>₨ 0.00</td>
+                                <td>Demo</td>
+                                <td>Demo</td>
+                                <td>DEmo</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <button class="dropdown action-btn">Actions <i
+                                            class="fa fa-caret-down"></i></button>
+                                    <ul class="actions-menu">
+                                        <li><i class="fas fa-money-bill"></i>Pay</li>
+                                        <li><i class="fas fa-eye"></i>View</li>
+                                        <li><i class="fas fa-edit"></i>Edit</li>
+                                        <li><i class="fas fa-power-off"></i>Deactivate</li>
+                                    </ul>
+                                </td>
+                                <td>CO0001</td>
+                                <td> Demo</td>
+                                <td>Walk-In Customer</td>
+                                <td>example@.com</td>
+                                <td>Demo</td>
+                                <td>No limit</td>
+                                <td>Rs.00</td>
+                                <td>Rs.00</td>
+                                <td>10/26/2020</td>
+                                <td>Demo</td>
+                                <td>Demo</td>
+                                <td>Demo</td>
+                                <td>Rs 17,692.20</td>
+                                <td>₨ 0.00</td>
+                                <td>Demo</td>
+                                <td>Demo</td>
+                                <td>DEmo</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <button class="dropdown action-btn">Actions <i
+                                            class="fa fa-caret-down"></i></button>
+                                    <ul class="actions-menu">
+                                        <li><i class="fas fa-money-bill"></i>Pay</li>
+                                        <li><i class="fas fa-eye"></i>View</li>
+                                        <li><i class="fas fa-edit"></i>Edit</li>
+                                        <li><i class="fas fa-power-off"></i>Deactivate</li>
+                                    </ul>
+                                </td>
+                                <td>CO0001</td>
+                                <td> Demo</td>
+                                <td>Walk-In Customer</td>
+                                <td>example@.com</td>
+                                <td>Demo</td>
+                                <td>No limit</td>
+                                <td>Rs.00</td>
+                                <td>Rs.00</td>
+                                <td>10/26/2020</td>
+                                <td>Demo</td>
+                                <td>Demo</td>
+                                <td>Demo</td>
+                                <td>Rs 17,692.20</td>
+                                <td>₨ 0.00</td>
+                                <td>Demo</td>
+                                <td>Demo</td>
+                                <td>DEmo</td>
+                            </tr>
                             <tr>
                                 <td>
                                     <button class="dropdown action-btn">Actions <i
@@ -495,9 +593,13 @@
                     </table>
                 </div>
             </div>
-
         </div>
     </div>
+
+
+    <script>
+        new DataTable('#mytable')
+    </script>
 </body>
 
 </html>

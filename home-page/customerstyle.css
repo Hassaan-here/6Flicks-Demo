@@ -3,11 +3,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-
-#table {
-  display: flex;
-  flex-direction: column;
-}
 #head-txt {
   display: flex;
   align-items: center;
@@ -31,7 +26,7 @@
   max-width: 100%;
 }
 .table {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   min-width: 100%;
   white-space: nowrap;
   > thead {
@@ -49,7 +44,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin: 15px;
+  margin: 15px 15px 30px 15px;
 }
 .blue-btn {
   height: 4rem;
@@ -61,44 +56,6 @@
   color: white;
   border: none;
   border-radius: 0.5rem;
-}
-
-.row-2 {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin: 15px;
-}
-#Entries {
-  display: flex;
-  align-items: center;
-}
-#Entries p {
-  font-size: 1.4rem;
-  margin: 0 4px 0 4px;
-}
-#Entries select {
-  width: 8rem;
-  height: 3rem;
-}
-#export-btns {
-  display: flex;
-  flex-direction: row;
-  margin-left: auto;
-  margin-right: auto;
-}
-#export-btns button {
-  width: 9rem;
-  height: 3rem;
-  border: 0.1rem solid grey;
-  border-radius: 0.3rem;
-}
-#export-btns button:hover {
-  background-color: rgb(208, 206, 206);
-}
-#search {
-  width: 15rem;
-  height: 3rem;
 }
 .actions-menu {
   display: none;
@@ -115,4 +72,9 @@
   padding: 0 0.5rem 0 0.5rem;
   border-radius: 0.3rem;
   color: white;
+}
+#mytable_wrapper .dataTables_length,
+#mytable_wrapper .dataTables_filter {
+  margin: 10px;
+  font-size: 1.3rem;
 }
