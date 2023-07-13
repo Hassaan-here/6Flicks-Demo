@@ -9,7 +9,6 @@
   margin: 20px 20px 10px 20px;
   padding: 5px;
   > p {
-    font-size: 1.5rem;
     margin: 8px;
   }
 }
@@ -26,16 +25,17 @@
   max-width: 100%;
 }
 .table {
-  font-size: 1.3rem;
   min-width: 100%;
   white-space: nowrap;
   > thead {
-    height: 8rem;
-    width: 5rem;
+    height: 4rem;
+    width: 3rem;
+    font-size: 1rem;
   }
   > tbody tr {
-    height: 7rem;
-    width: 9rem;
+    height: 4rem;
+    width: 3rem;
+    font-size: 0.8rem;
   }
 }
 
@@ -45,17 +45,9 @@
   justify-content: space-between;
   align-items: center;
   margin: 15px 15px 30px 15px;
-}
-.blue-btn {
-  height: 4rem;
-  width: 8rem;
-  font: 1rem;
-  align-items: center;
-  padding: 0.6rem;
-  background-color: rgb(19, 103, 209);
-  color: white;
-  border: none;
-  border-radius: 0.5rem;
+  > h2 {
+    font-size: 1.5rem;
+  }
 }
 .actions-menu {
   display: none;
@@ -76,5 +68,5 @@
 #mytable_wrapper .dataTables_length,
 #mytable_wrapper .dataTables_filter {
   margin: 10px;
-  font-size: 1.3rem;
+  font-size: 0.9rem;
 }
