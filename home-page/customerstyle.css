@@ -70,3 +70,13 @@
   margin: 10px;
   font-size: 0.9rem;
 }
+/* Modal  */
+#hidden {
+  display: none;
+}
+#business-section {
+  display: none;
+}
+#individual-section {
+  display: none;
+}
